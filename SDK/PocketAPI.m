@@ -575,18 +575,22 @@ static PocketAPI *sSharedAPI = nil;
 	if ([platform hasPrefix:@"iPhone2"])            return @"iPhone 3GS";
 	if ([platform hasPrefix:@"iPhone3"])            return @"iPhone 4";
 	if ([platform hasPrefix:@"iPhone4"])            return @"iPhone 4S";
+	if ([platform hasPrefix:@"iPhone5"])            return @"iPhone 5";
 	
 	// iPod
 	if ([platform hasPrefix:@"iPod1"])              return @"iPod touch 1G";
 	if ([platform hasPrefix:@"iPod2"])              return @"iPod touch 2G";
 	if ([platform hasPrefix:@"iPod3"])              return @"iPod touch 3G";
 	if ([platform hasPrefix:@"iPod4"])              return @"iPod touch 4G";
+	if ([platform hasPrefix:@"iPod5"])              return @"iPod touch 5G";
 	
 	// iPad
 	if ([platform hasPrefix:@"iPad1"])              return @"iPad 1G";
-	if ([platform hasPrefix:@"iPad2"])              return @"iPad 2G";
+	if ([platform hasPrefix:@"iPad2,5"])            return @"iPad mini (Wifi)";
+    if ([platform hasPrefix:@"iPad2"])              return @"iPad 2G";
 	if ([platform hasPrefix:@"iPad3"])              return @"iPad 3G";
-	
+	if ([platform hasPrefix:@"iPad4"])              return @"iPad 4G";
+    
 	// Apple TV
 	if ([platform hasPrefix:@"AppleTV2"])           return @"Apple TV 2G";
 	
